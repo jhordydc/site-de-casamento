@@ -1,0 +1,344 @@
+
+
+body, h1, h2, h3, p, a, label, button {
+    font-family: 'Caudex Serif', serif;
+    padding-top: 5px;
+}
+
+
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.container-capa {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 45%; /* Ajuste o valor para controlar a altura da imagem */
+}
+
+#textoCapa {
+    position: absolute;
+    top: 50%;
+    left: 15vw; /* Utiliza uma unidade relativa para o padding à esquerda */
+    transform: translateY(-50%);
+    color: white;
+    text-align: left; /* Alinha o texto à esquerda */
+    font-family: 'Caudex Serif', serif; /* Adiciona a fonte desejada */
+}
+
+#textoCapa h2 {
+    font-size: 7vw; /* Utiliza uma unidade relativa para o tamanho do texto */
+    margin:1vw 0; /* Utiliza uma unidade relativa para o espaço entre os nomes */
+}
+
+.simbolo-e {
+    font-size: 5vw; /* Utiliza uma unidade relativa para o tamanho do símbolo "&" */
+    margin: 2vw 0; /* Utiliza uma unidade relativa para o espaço acima e abaixo do "&" */
+}
+
+#textoCapa p {
+    margin: 0;
+    font-size: 2vw; /* Utiliza uma unidade relativa para o tamanho do símbolo "&" */
+    margin: 2vw 0; /* Utiliza uma unidade relativa para o espaço acima e abaixo do "&" */
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Altera para 'contain' para que a imagem não seja cortada */
+}
+
+/* Anula a estilização do Bootstrap */
+.fixed-top {
+    position: relative !important; /* Ou use outro valor desejado */
+    /* Outros estilos conforme necessário */
+}
+
+/* CONTADOR DO TEMPO DE RELÓGIO */
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap; /* Adiciona quebra de linha para elementos responsivos */
+    justify-content: center;
+}
+
+.countdown-card {
+    text-align: center;
+    margin: 20px; /* Reduz o espaçamento para telas menores */
+    
+}
+
+.countdown-square {
+    width: 60px; /* Reduz o tamanho do quadrado para telas menores */
+    height: 60px; /* Reduz o tamanho do quadrado para telas menores */
+    border-radius: 8px;
+    background-color: #e0e0e0; /* Cor de fundo do quadrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centraliza o quadrado */
+}
+
+.countdown-number {
+    font-size: 1em; /* Reduz o tamanho da fonte para telas menores */
+    font-weight: bold;
+}
+
+.countdown-text {
+    margin-top: 5px; /* Reduz o espaçamento entre o número e o texto para telas menores */
+}
+
+#home {
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+    color:#212529;
+}
+
+#home h1 {
+    font-size: 2em;
+}
+
+#home p {
+    margin-bottom: 20px;
+}
+
+#home blockquote {
+    font-style: italic;
+}
+
+
+#o-casal {
+    color: #212529;
+    text-align: center;
+}
+
+.casal-images img {
+    width: 30vw; /* Largura em relação à largura da viewport */
+    max-width: 300px; /* Largura máxima para garantir a responsividade em telas pequenas */
+    height: auto; /* Altura automática para manter a proporção */
+    object-fit: cover; /* Mantém a proporção */
+    border-radius: 50%; /* Torna a imagem arredondada */
+    margin-right: 40px; /* Espaçamento entre as imagens */
+}
+
+
+
+.carousel-inner img {
+    width: 100%; /* Ajusta a largura para ocupar 100% do contêiner */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+.carousel-inner img {
+    width: 100%; /* Garante que as imagens do slider se ajustem à largura do container */
+}
+
+/* cerimonia-recepcao */
+#cerimonia-recepcao {
+    color: #212529;
+    text-align: center; /* Centralizar conteúdo do contêiner */
+}
+
+.localizacao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.imagem-local {
+    width: 48%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem-local img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Adiciona regras de estilo para o mapa do Google */
+.map-container {
+    width: 90%;
+    max-width: 100%;
+    height: 90%; /* Ajusta a altura conforme necessário */
+    max-height: 400px; /* Define uma altura máxima, ajuste conforme necessário */
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#lista-presentes {
+    text-align: center;
+    color: #212529;
+}
+
+#lista-presentes h1 {
+    font-size: 2em;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.card {
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #fff;
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* Garante que a borda arredondada seja aplicada corretamente */
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+.presentear-btn {
+    background-color: #D6C7BD;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.presentear-btn:hover {
+    background-color: #E3E5E8;
+}
+
+
+
+
+
+.confirmar-presenca-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.radio-group {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+
+
+.label-radio {
+    position: relative;
+    padding-left: 30px;
+    margin-right: 15px;
+}
+
+.label-radio::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #E3E5E8;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+input[type="radio"]:checked + .label-radio::before {
+    background-color: #D6C7BD;
+}
+
+/* Novas alterações para rótulos ao lado dos inputs */
+label {
+    display: flex;
+    align-items: center;
+}
+
+label span {
+    margin-left: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #D6C7BD;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D6C7BD;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: #ACB6B3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
